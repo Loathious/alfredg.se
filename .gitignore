@@ -1,3 +1,4 @@
 .taste-skill/
-assets/sourdough-bread-loaf.webp
+assets/*
+!assets/credits.json
 _test.html

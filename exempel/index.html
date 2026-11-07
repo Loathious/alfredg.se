@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bageri Linnea – exempel på ett förslag</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Ett påhittat bageri, byggt av Alfred Gustafsson för att visa hur ett förslag på en ny hemsida kan se ut.">
+<meta name="theme-color" content="#f6f1e8">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../fonts/gambetta-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="linnea.css">
+<script>
+  document.documentElement.classList.add('js');
+  if (window.self !== window.top || location.search.indexOf('ram') > -1) document.documentElement.classList.add('in-frame');
+</script>
+</head>
+<body>
+
+<div class="demo-bar">
+  <p><strong>Exempel 001</strong><span>Påhittat företag, byggt för att visa hur ett förslag kan se ut.</span></p>
+  <a href="../#exempel">Tillbaka till alfredg.se</a>
+</div>
+
+<header class="top">
+  <a class="name" href="#start">Bageri Linnea</a>
+  <nav aria-label="Meny">
+    <a href="#brod">Bröd</a>
+    <a href="#fika">Fika</a>
+    <a href="#bestall">Beställ</a>
+    <a href="#hitta-hit">Hitta hit</a>
+  </nav>
+  <a class="call" href="tel:+46701740642">Ring<span class="call-num"> 070-174 06 42</span></a>
+</header>
+
+<main id="start">
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="where">Storgatan 12 · sedan 1998</p>
+    <h1>Surdegsbröd, bakat varje morgon på Storgatan.</h1>
+    <p class="status" data-status><span class="dot"></span><span data-status-text>Öppet i dag 7–17</span></p>
+    <p class="hero-text">Vi bakar på långjäst surdeg och mal kardemumman samma morgon som bullarna bakas. Brödet är klart klockan sju, och det som blir över säljs för halva priset efter klockan tre.</p>
+    <p class="actions"><a class="btn" href="#hitta-hit">Hitta hit</a><a class="btn btn-quiet" href="#brod">Se dagens bröd</a></p>
+  </div>
+  <figure class="hero-img">
+    <img src="img/ragbrod.webp" width="1600" height="1068" alt="Ett nybakat, skuret rågbröd på en träskiva" fetchpriority="high">
+  </figure>
+</section>
+
+<section class="breads" id="brod" aria-labelledby="brod-titel">
+  <div class="head">
+    <h2 id="brod-titel">Dagens bröd</h2>
+    <p>Allt bakas här, varje morgon. När det är slut är det slut, så ring gärna och lägg undan.</p>
+  </div>
+  <ul class="bread-cards">
+    <li>
+      <img src="img/surdeg.webp" width="900" height="600" alt="En rund surdegslimpa på ett vitt fat" loading="lazy" decoding="async">
+      <h3>Surdegslimpa <span>65 kr</span></h3>
+      <p>Vete, råg och havssalt. Jäser i ett dygn innan den bakas.</p>
+    </li>
+    <li>
+      <img src="img/frobrod.webp" width="900" height="598" alt="Skivat rågbröd med solroskärnor" loading="lazy" decoding="async">
+      <h3>Rågbröd med frön <span>55 kr</span></h3>
+      <p>Solros, linfrö och pumpakärnor. Saftigt i flera dagar.</p>
+    </li>
+    <li>
+      <img src="img/frallor.webp" width="1400" height="1050" alt="Nybakade frallor på en plåt" loading="lazy" decoding="async">
+      <h3>Frallor <span>8 kr/st</span></h3>
+      <p>Bakas två gånger om dagen, klockan sju och klockan tolv.</p>
+    </li>
+  </ul>
+  <ul class="bread-list">
+    <li><span>Danskt rågbröd</span><span class="desc">Mörkt och syrligt, skivas tunt</span><span>60 kr</span></li>
+    <li><span>Valnötsbröd</span><span class="desc">Med honung och rostade valnötter</span><span>70 kr</span></li>
+    <li><span>Baguette</span><span class="desc">Klockan sju och tolv</span><span>35 kr</span></li>
+    <li><span>Glutenfritt bröd</span><span class="desc">Fredagar, beställ gärna</span><span>75 kr</span></li>
+  </ul>
+</section>
+
+<section class="fika" id="fika" aria-labelledby="fika-titel">
+  <figure class="fika-img">
+    <img src="img/snacka.webp" width="1000" height="654" alt="Russinsnäckor med glasyr" loading="lazy" decoding="async">
+  </figure>
+  <div class="fika-copy">
+    <h2 id="fika-titel">Fika</h2>
+    <p>Sätt dig vid fönstret. Påtår ingår, och bullarna är som godast före elva.</p>
+    <ul class="menu">
+      <li><span>Kardemummabulle</span><span>32 kr</span></li>
+      <li><span>Kanelbulle</span><span>30 kr</span></li>
+      <li><span>Russinsnäcka</span><span>34 kr</span></li>
+      <li><span>Morotskaka, bit</span><span>45 kr</span></li>
+      <li><span>Chokladboll</span><span>22 kr</span></li>
+      <li><span>Kaffe eller te</span><span>32 kr</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="order" id="bestall" aria-labelledby="bestall-titel">
+  <div class="order-copy">
+    <h2 id="bestall-titel">Beställ till helgen</h2>
+    <p>Ring eller kom in senast torsdag klockan tre, så står ditt bröd klart på lördag morgon. Till kalas, möten och fika på jobbet bakar vi gärna större beställningar.</p>
+    <a class="btn" href="tel:+46701740642">Ring och beställ</a>
+  </div>
+  <figure class="order-img">
+    <img src="img/deg.webp" width="1200" height="925" alt="En jäst bröddeg under en kökshandduk" loading="lazy" decoding="async">
+    <figcaption>Degen till lördagens bröd sätts på torsdag kväll.</figcaption>
+  </figure>
+</section>
+
+<section class="visit" id="hitta-hit" aria-labelledby="hitta-titel">
+  <h2 id="hitta-titel">Öppettider och hitta hit</h2>
+  <div class="visit-grid">
+    <table class="hours" data-hours>
+      <caption class="sr">Öppettider</caption>
+      <tbody>
+        <tr data-days="1"><th scope="row">Måndag</th><td>7–17</td></tr>
+        <tr data-days="2"><th scope="row">Tisdag</th><td>7–17</td></tr>
+        <tr data-days="3"><th scope="row">Onsdag</th><td>7–17</td></tr>
+        <tr data-days="4"><th scope="row">Torsdag</th><td>7–17</td></tr>
+        <tr data-days="5"><th scope="row">Fredag</th><td>7–17</td></tr>
+        <tr data-days="6"><th scope="row">Lördag</th><td>8–15</td></tr>
+        <tr data-days="0"><th scope="row">Söndag</th><td>Stängt</td></tr>
+      </tbody>
+    </table>
+    <div class="address">
+      <p class="street">Storgatan 12</p>
+      <p>Mitt emot torget. Cykelställ utanför och parkering på torget, gratis första timmen.</p>
+      <p><a class="btn" href="#hitta-hit">Vägbeskrivning</a></p>
+    </div>
+    <svg class="map" viewBox="0 0 400 300" role="img" aria-label="Karta: bageriet ligger på Storgatan, mitt emot torget">
+      <rect width="400" height="300" fill="#ece4d6"/>
+      <g fill="none" stroke="#f9f6f0" stroke-linecap="round">
+        <path d="M-10 150 H410" stroke-width="22"/>
+        <path d="M120 -10 V310" stroke-width="14"/>
+        <path d="M300 -10 C290 80 320 200 300 310" stroke-width="12"/>
+        <path d="M-10 60 L130 70 L410 40" stroke-width="8"/>
+        <path d="M-10 250 H410" stroke-width="8"/>
+      </g>
+      <rect x="160" y="175" width="110" height="60" fill="#d8ccb6"/>
+      <text x="215" y="210" text-anchor="middle" font-family="Switzer, sans-serif" font-size="13" fill="#6b5a44">Torget</text>
+      <text x="40" y="143" font-family="Switzer, sans-serif" font-size="12" fill="#6b5a44">Storgatan</text>
+      <circle cx="210" cy="132" r="13" fill="#7a4a22"/>
+      <circle cx="210" cy="132" r="5" fill="#f6f1e8"/>
+    </svg>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot-name">Bageri Linnea</p>
+  <p>Storgatan 12 · <a href="tel:+46701740642">070-174 06 42</a></p>
+  <p class="foot-note">Påhittat företag och telefonnummer. Bilder: CC0 via rawpixel och Wikimedia Commons.</p>
+</footer>
+
+<div class="thumb-bar" aria-label="Snabbval">
+  <a href="tel:+46701740642">Ring</a>
+  <a href="#hitta-hit">Hitta hit</a>
+</div>
+
+<script src="linnea.js" defer></script>
+</body>
+</html>
